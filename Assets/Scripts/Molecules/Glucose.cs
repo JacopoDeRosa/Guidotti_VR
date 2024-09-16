@@ -13,6 +13,18 @@ namespace Molecules
         
         public bool Reserved => _reserved;
         
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.matrix = transform.localToWorldMatrix;
+            Gizmos.DrawWireSphere(Vector3.zero, 0.25f);
+            
+            Color colorAlpha = Color.blue;
+            colorAlpha.a = 0.5f;
+            Gizmos.color = colorAlpha;
+            Gizmos.DrawSphere(Vector3.zero, 0.25f);
+        }
+        
         private void OnValidate()
         {
             if(_rigidbody == null) _rigidbody = GetComponent<Rigidbody>();
@@ -28,5 +40,6 @@ namespace Molecules
         {
             _reserved = true;
         }
+        
     }
 }

@@ -1,19 +1,33 @@
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Molecules
 {
     public class Invokan : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] private float _attachmentRange = 0.5f;
+
+        public void OnPickUp()
         {
-        
+            
         }
 
-        // Update is called once per frame
-        void Update()
+        public void OnDrop()
         {
-        
+            
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.matrix = transform.localToWorldMatrix;
+            Gizmos.DrawWireSphere(Vector3.zero, _attachmentRange);
+
+            Color colorAlpha = Color.red;
+            colorAlpha.a = 0.5f;
+            Gizmos.color = colorAlpha;
+            Gizmos.DrawSphere(Vector3.zero, _attachmentRange);
         }
     }
 }

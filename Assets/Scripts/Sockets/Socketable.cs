@@ -1,13 +1,16 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using Molecules;
 
 namespace Sockets
 {
     public class Socketable : MonoBehaviour
     {
         [SerializeField] private SocketType _minimumSocketType;
+
         [SerializeField]  private float _checkRadius = 0.5f;
+        [SerializeField] private Glucose _glucose;
 
         private Socket _activeSocket;
 
