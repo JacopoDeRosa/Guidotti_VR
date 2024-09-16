@@ -15,7 +15,18 @@ namespace Molecules
 
         public void OnDrop()
         {
-            
+            TryPlugReceptor();
+        }
+        
+        private void TryPlugReceptor()
+        {
+            Collider[] colliders = Physics.OverlapSphere(transform.position, _attachmentRange);
+            foreach (Collider collider in colliders)
+            {
+                Receptor receptor = collider.GetComponent<Receptor>();
+                if (receptor == null) continue;
+                receptor.PlugReceptor(this);
+            }
         }
 
         private void OnDrawGizmosSelected()
