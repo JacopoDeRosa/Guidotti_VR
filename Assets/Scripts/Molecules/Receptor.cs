@@ -9,21 +9,30 @@ namespace Molecules
         [SerializeField, Range(0, 1)] private float _rejectionChance = 0.5f;
         [SerializeField] private float _rejectionForce = 10f;
         [SerializeField] private float _attractionForce = 10f;
-        [SerializeField] private float _pulseFrequency = 1f;
+        [SerializeField] private float _minPulseFrequency, _maxPulseFrequency;
         [SerializeField] private float _pulseRange = 1f;
+        [SerializeField] private float _destroyDelay = 0.1f;
         [SerializeField] private LayerMask _moleculeLayer;
+        
 
-        private float _timeSinceLastPulse;
+        private float _nextPulseTime;
         private bool _plugged = false;
 
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.matrix = transform.localToWorldMatrix;
+            Gizmos.DrawWireSphere(Vector3.zero, _pulseRange);
+        }
 
         private void Update()
         {
-            _timeSinceLastPulse += Time.deltaTime;
-            if (_timeSinceLastPulse >= 1 / _pulseFrequency)
+            if (_plugged) return;
+            
+            if (Time.time >= _nextPulseTime)
             {
-                _timeSinceLastPulse = 0;
                 Pulse();
+                _nextPulseTime = Time.time + Random.Range(_minPulseFrequency, _maxPulseFrequency);
             }
         }
 
@@ -34,8 +43,9 @@ namespace Molecules
             {
                 Glucose molecule = collider.GetComponent<Glucose>();
                 if (molecule == null || molecule.Reserved) continue;
-                
-                
+                molecule.Rigidbody.velocity = Vector3.zero;
+                molecule.Reserve();
+                molecule.Rigidbody.AddForce((transform.position - molecule.transform.position).normalized * _attractionForce, ForceMode.Impulse);
             }
         }
         
@@ -50,6 +60,14 @@ namespace Molecules
                _plugged = true;
            }
         }
-   
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (_plugged) return;
+            Glucose molecule = other.GetComponent<Glucose>();
+            if (molecule == null) return;
+            Destroy(molecule.gameObject, _destroyDelay);
+            Debug.Log("Glucose absorbed");
+        }
     }
 }
