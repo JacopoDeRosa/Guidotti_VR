@@ -1,19 +1,25 @@
+using System;
 using UnityEngine;
 
 namespace Molecules
 {
     public class BodyStatus : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+       public static BodyStatus Instance { get; private set; }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+       [SerializeField] private float _glucoseLevel = 100;
+       [SerializeField] private float _sodiumLevel = 100;
+       
+       private void Awake()
+       {
+              if (Instance == null)
+              {
+                Instance = this;
+              }
+              else
+              {
+                Destroy(gameObject);
+              }
+       }
     }
 }

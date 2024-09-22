@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6256420717910763956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Proto_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 230225280793289374}
   - component: {fileID: 3974124404874915596}
   - component: {fileID: 2999242958957891435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8052902218008070085}
   - component: {fileID: 8844251384137799181}
   - component: {fileID: 384551465216438597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 4310239101518950506}
   - component: {fileID: 5504247900574374488}
   - component: {fileID: 3950586367215382926}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 809621204271138350}
   - component: {fileID: 2717446520780222562}
   - component: {fileID: 7979753455814650226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 2922067824905411625}
   - component: {fileID: 5356700477385414080}
   - component: {fileID: 1343348212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Glucose_Molecule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,16 +429,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7392627381258749622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 902f70778064ffb4e9185b73712313f9, type: 3}
+  m_Script: {fileID: 11500000, guid: b52a47bbbc8f439ab07d27a4c039cd32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxInitialForce: {x: 0, y: 0, z: 1}
-  _minInitialForce: {x: 0, y: 0, z: 0.5}
-  _maxInitialTorque: {x: 0.05, y: 0.05, z: 0.05}
-  _minInitialTorque: {x: -0.05, y: -0.05, z: -0.05}
-  _maxInitialScale: 1
+  _maxInitialForce: {x: 0, y: 0, z: 2}
+  _minInitialForce: {x: 0, y: 0, z: 1}
+  _maxInitialTorque: {x: 0.01, y: 0.01, z: 0.01}
+  _minInitialTorque: {x: -0.01, y: -0.01, z: -0.01}
+  _maxInitialScale: 0.75
   _minInitialScale: 0.5
-  _lifetime: 15
+  _lifetime: 12
+  _moleculeType: 2
   _rigidbody: {fileID: 2922067824905411625}
   _collider: {fileID: 1343348212}
 --- !u!135 &1343348212
@@ -465,7 +466,7 @@ GameObject:
   - component: {fileID: 26507001255658335}
   - component: {fileID: 4025065621216734283}
   - component: {fileID: 2860450429741485648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,6 +624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MSH_Glucose
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a04de1870aee06843baae761de5fbaef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04de1870aee06843baae761de5fbaef, type: 3}
