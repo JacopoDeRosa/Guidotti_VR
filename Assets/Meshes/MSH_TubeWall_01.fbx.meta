@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: M_TubeWall
+    second: {fileID: 2100000, guid: 02abda212a6591145b42c4d5e5de45a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: M_TubeWall.004
     second: {fileID: 2100000, guid: 02abda212a6591145b42c4d5e5de45a4, type: 2}
   - first:
