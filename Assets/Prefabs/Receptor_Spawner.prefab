@@ -49,4 +49,4 @@ MonoBehaviour:
   - {fileID: 3574584912350631685, guid: af33fd6d60b7fb2438b6e7bcfdd99d2b, type: 3}
   - {fileID: 3574584912350631685, guid: af33fd6d60b7fb2438b6e7bcfdd99d2b, type: 3}
   - {fileID: 3574584912350631685, guid: af33fd6d60b7fb2438b6e7bcfdd99d2b, type: 3}
-  _respawnTime: {x: 5, y: 10}
+  _respawnTime: {x: 15, y: 20}

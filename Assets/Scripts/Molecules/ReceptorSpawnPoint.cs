@@ -21,11 +21,11 @@ namespace Molecules
             
             Color color = Color.magenta;
             Gizmos.color = color;
-            Gizmos.DrawWireSphere(Vector3.zero, 0.15f);
+            Gizmos.DrawWireSphere(Vector3.zero, 0.12f);
             
             color.a = 0.25f;
             Gizmos.color = color;
-            Gizmos.DrawSphere(Vector3.zero, 0.15f);
+            Gizmos.DrawSphere(Vector3.zero, 0.12f);
         }
         
         private void SpawnReceptor()
