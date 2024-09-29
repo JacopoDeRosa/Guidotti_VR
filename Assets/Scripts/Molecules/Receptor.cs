@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace Molecules
@@ -16,6 +17,7 @@ namespace Molecules
         [SerializeField] private float _destroyDelay = 0.1f;
         [SerializeField] private LayerMask _moleculeLayer;
         [SerializeField] private MoleculeTypeFlags _wantedMoleculeTypes;
+        [SerializeField] private float _deathDelay = 2.0f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
@@ -23,7 +25,10 @@ namespace Molecules
         private MoleculeTypeFlags _reservedMoleculeThisPulse;
         private List<ReceptorMolecule> _reservedMoleculesThisPulse = new List<ReceptorMolecule>();
         
-
+        public UnityEvent OnReceptorPlugged;
+        public UnityEvent OnReceptorDestroyed;
+        public UnityEvent OnMoleculeConsumed;
+        
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
@@ -116,8 +121,9 @@ namespace Molecules
            {
                _plugged = true;
                ResetReceptor();
-               Destroy(gameObject, 2.0f);
-               Destroy(invokan.gameObject, 2.0f);
+               Destroy(gameObject, _deathDelay);
+               Destroy(invokan.gameObject, _deathDelay);
+               OnReceptorPlugged.Invoke();
            }
         }
 

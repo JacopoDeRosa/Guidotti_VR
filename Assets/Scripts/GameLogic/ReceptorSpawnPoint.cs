@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections;
-using Unity.VisualScripting;
+﻿using System.Collections;
+using Molecules;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Molecules
+namespace GameLogic
 {
-    public class ReceptorSpawnPoint : MonoBehaviour
+    public class ReceptorSpawnPoint : Spawner
     {
         [SerializeField] private Receptor[] _spawnPool;
         [SerializeField] private Vector2 _respawnTime = new Vector2(5f, 10f);
         
         private Receptor _currentReceptor;
-        
-        private bool _spawning = false;
+        private bool _busy;
         
         private void OnDrawGizmos()
         {
@@ -35,15 +33,21 @@ namespace Molecules
         
         private IEnumerator SpawnRoutine()
         {
-            _spawning = true;
+            _busy = true;
             yield return new WaitForSeconds(Random.Range(_respawnTime.x, _respawnTime.y));
             SpawnReceptor();
-            _spawning = false;
+            _busy = false;
         }
-        
+
+        protected override void OnSetSpawning(bool value)
+        {
+            if (value) StartCoroutine(SpawnRoutine());
+            else StopAllCoroutines();
+        }
+
         private void Update()
         {
-            if(_spawning) return;
+            if(_busy || !_spawning) return;
             if(_currentReceptor == null)  StartCoroutine(SpawnRoutine());
         }
 

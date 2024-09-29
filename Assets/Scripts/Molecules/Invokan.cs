@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using GameLogic;
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,19 +11,37 @@ namespace Molecules
     {
         [SerializeField] private float _attachmentRange = 0.5f;
         [SerializeField] private LayerMask _receptorLayer;
+        [SerializeField] private InvokanAnimation _animation;
+        [SerializeField] private InteractableUnityEventWrapper _eventWrapper;
+
+        public event Action OnHandPickUp;
+        public event Action OnHandDrop;
+        
+        private void OnValidate()
+        {
+            if (_eventWrapper == null)
+            {
+                _eventWrapper = GetComponent<InteractableUnityEventWrapper>();
+            }
+        }
 
         private void Awake()
         {
-            //StartCoroutine(DebugRoutine());
+           // StartCoroutine(DebugRoutine());
+            
+            _eventWrapper.WhenSelect.AddListener(OnPickUp);
+            _eventWrapper.WhenUnselect.AddListener(OnDrop);
         }
 
         public void OnPickUp()
         {
-            
+            OnHandPickUp?.Invoke();
+            _animation.enabled = false;
         }
 
         public void OnDrop()
         {
+            OnHandDrop?.Invoke();
             TryPlugReceptor();
         }
         

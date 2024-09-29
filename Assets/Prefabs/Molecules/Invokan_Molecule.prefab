@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2944806154735300833}
   - component: {fileID: 6289151629723452159}
   - component: {fileID: 749749500}
+  - component: {fileID: 3128962241821427436}
   m_Layer: 6
   m_Name: Invokan_Molecule
   m_TagString: Untagged
@@ -135,34 +136,10 @@ MonoBehaviour:
       m_Calls: []
   _whenSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6289151629723452159}
-        m_TargetAssemblyTypeName: Molecules.Invokan, Assembly-CSharp
-        m_MethodName: OnPickUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6289151629723452159}
-        m_TargetAssemblyTypeName: Molecules.Invokan, Assembly-CSharp
-        m_MethodName: OnDrop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   _whenInteractorViewAdded:
     m_PersistentCalls:
       m_Calls: []
@@ -191,6 +168,8 @@ MonoBehaviour:
   _receptorLayer:
     serializedVersion: 2
     m_Bits: 2147483647
+  _animation: {fileID: 3128962241821427436}
+  _eventWrapper: {fileID: 2944806154735300833}
 --- !u!65 &749749500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -204,6 +183,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3128962241821427436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944806154735300834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30db004928d84e87bdd4b3a92761ec69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bobbingSpeed: 1
+  _spinSpeed: 55
+  _bobbingAmplitude: {x: 0, y: 0.25, z: 0}
 --- !u!1001 &4173023958632264458
 PrefabInstance:
   m_ObjectHideFlags: 0
