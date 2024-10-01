@@ -36,6 +36,7 @@ namespace GameLogic
         private IEnumerator SpawnInvokanRoutine()
         {
             _busy = true;
+            
             yield return new WaitForSeconds(_spawnDelay);
             
             _spawnedInvokan = Instantiate(_invokanPrefab, transform.position, transform.rotation);

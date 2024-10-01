@@ -40,6 +40,11 @@ namespace GameLogic
 
         private void OnValidate()
         {
+            RefreshSpawners();
+        }
+        
+        public void RefreshSpawners()
+        {
             _spawners = FindObjectsOfType<Spawner>();
         }
 

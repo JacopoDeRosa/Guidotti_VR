@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2810034680734885172}
   - component: {fileID: 2810034680734885175}
   - component: {fileID: 2810034680396399475}
+  - component: {fileID: 4157506041199934368}
   m_Layer: 7
   m_Name: Receptor_SGLT1
   m_TagString: Untagged
@@ -58,6 +59,32 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _wantedMoleculeTypes: 3
+  _deathDelay: 2
+  _rejectionDelay: 1
+  OnReceptorPlugged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReceptorDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMoleculeConsumed:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReceptorSpawned:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4157506041199934368}
+        m_TargetAssemblyTypeName: Materials.FadeInMaterialController, Assembly-CSharp
+        m_MethodName: FadeIn
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!135 &2810034680396399475
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71,6 +98,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.12
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4157506041199934368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2810034680734885173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e87034d60a24baf94b96c40fb929e05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _meshRenderer: {fileID: 3548460502707141427}
+  _materialIndexes: 00000000
+  _fadeOutPosition: 0
+  _fadeInPosition: 1
 --- !u!1001 &2810034679028017079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,7 +180,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 412cecc85fde65f43bd49f2cd64a10a4, type: 2}
+      objectReference: {fileID: 2100000, guid: 2f8c55bc5954dd243867e327956eaaa1, type: 2}
     - target: {fileID: 919132149155446097, guid: 0ec3777e97329c140b1a1289b3a85e82,
         type: 3}
       propertyPath: m_Name
@@ -153,6 +196,12 @@ PrefabInstance:
 --- !u!4 &2410981448522858588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ec3777e97329c140b1a1289b3a85e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810034679028017079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &3548460502707141427 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 0ec3777e97329c140b1a1289b3a85e82,
     type: 3}
   m_PrefabInstance: {fileID: 2810034679028017079}
   m_PrefabAsset: {fileID: 0}

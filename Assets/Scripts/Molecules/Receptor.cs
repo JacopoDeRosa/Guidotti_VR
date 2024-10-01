@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Events;
@@ -17,7 +18,8 @@ namespace Molecules
         [SerializeField] private float _destroyDelay = 0.1f;
         [SerializeField] private LayerMask _moleculeLayer;
         [SerializeField] private MoleculeTypeFlags _wantedMoleculeTypes;
-        [SerializeField] private float _deathDelay = 2.0f;
+        [SerializeField] private float _deathDelay = 1.0f;
+        [SerializeField] private float _rejectionDelay = 1.0f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
@@ -28,12 +30,18 @@ namespace Molecules
         public UnityEvent OnReceptorPlugged;
         public UnityEvent OnReceptorDestroyed;
         public UnityEvent OnMoleculeConsumed;
+        public UnityEvent OnReceptorSpawned;
         
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Gizmos.matrix = transform.localToWorldMatrix;
             Gizmos.DrawWireCube(_pulseCenter, _pulseHalfExtents * 2);
+        }
+
+        private void Start()
+        {
+            OnReceptorSpawned.Invoke();
         }
 
         private void Update()
@@ -112,6 +120,7 @@ namespace Molecules
         
         public void PlugReceptor(Invokan invokan)
         {
+            /*
            if(Random.value < _rejectionChance)
            {
                Debug.Log("Rejected");
@@ -125,6 +134,33 @@ namespace Molecules
                Destroy(invokan.gameObject, _deathDelay);
                OnReceptorPlugged.Invoke();
            }
+           */
+            StartCoroutine(ReceptorPluggedRoutine(invokan));
+        }
+        
+        private void Reject(Invokan invokan)
+        {
+            invokan.Rigidbody.AddForce(transform.up * _rejectionForce, ForceMode.Impulse);
+            invokan.DeleteMolecule(2);
+            _plugged = false;
+        }
+        
+        private IEnumerator ReceptorPluggedRoutine(Invokan invokan)
+        {
+            _plugged = true;
+            
+            if (_rejectionChance > 0)
+            {
+                yield return new WaitForSeconds(_rejectionDelay);
+                if (Random.value < _rejectionChance) Reject(invokan);
+            }
+            
+            OnReceptorPlugged.Invoke();
+            
+            yield return new WaitForSeconds(_deathDelay);
+            
+            OnReceptorDestroyed.Invoke();
+            Destroy(gameObject);
         }
 
         private void OnTriggerEnter(Collider other)

@@ -4,6 +4,7 @@ using GameLogic;
 using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Materials;
 
 namespace Molecules
 {
@@ -13,15 +14,24 @@ namespace Molecules
         [SerializeField] private LayerMask _receptorLayer;
         [SerializeField] private InvokanAnimation _animation;
         [SerializeField] private InteractableUnityEventWrapper _eventWrapper;
+        [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] private FadeInMaterialController _fadeController;
 
         public event Action OnHandPickUp;
         public event Action OnHandDrop;
+
+        public Rigidbody Rigidbody => _rigidbody;
         
         private void OnValidate()
         {
             if (_eventWrapper == null)
             {
                 _eventWrapper = GetComponent<InteractableUnityEventWrapper>();
+            }
+            
+            if (_rigidbody == null)
+            {
+                _rigidbody = GetComponent<Rigidbody>();
             }
         }
 
@@ -31,6 +41,7 @@ namespace Molecules
             
             _eventWrapper.WhenSelect.AddListener(OnPickUp);
             _eventWrapper.WhenUnselect.AddListener(OnDrop);
+            _fadeController.FadeIn(1);
         }
 
         public void OnPickUp()
@@ -78,6 +89,12 @@ namespace Molecules
                 TryPlugReceptor();
                 yield return new WaitForSeconds(2f);
             }
+        }
+        
+        public void DeleteMolecule(float delay)
+        {
+            Destroy(gameObject, delay);
+            _fadeController.FadeOut(1);
         }
     }
 }
