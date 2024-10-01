@@ -1403,7 +1403,7 @@ PlayableDirector:
   m_GameObject: {fileID: 271111757}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 24d91892b61964140849ba8bbcc7e236, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -1428,6 +1428,8 @@ PlayableDirector:
   - key: {fileID: -8345858380259334544, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
     value: {fileID: 1052926589}
   - key: {fileID: 2443195003674471464, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
+    value: {fileID: 629018543}
+  - key: {fileID: -1264852812569541191, guid: 24d91892b61964140849ba8bbcc7e236, type: 2}
     value: {fileID: 629018543}
   m_ExposedReferences:
     m_References: []
@@ -2706,6 +2708,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2651c8afbee71144080aa6e8dfb2864a, type: 2}
     - {fileID: 11400000, guid: 63fd45337ea5a694799a27438aa6e808, type: 2}
     - {fileID: 11400000, guid: 798d2da74ba6c234dbbc9e0859d7493e, type: 2}
+    - {fileID: 11400000, guid: 9e994187fda124140aa5a003c44d2454, type: 2}
+    - {fileID: 11400000, guid: dcd4064327646044e9c81494e7bf6332, type: 2}
+    - {fileID: 11400000, guid: 903f2628f12f15d409f71bbd01adcdd4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -2790,6 +2795,51 @@ MonoBehaviour:
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11400000, guid: 838292183087110489a2891151ae4134,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: UI.Subtitle, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629018542}
+          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
+          m_MethodName: ReadSubtitle
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 76b307850d8c2d84c8df47d7eb6c1db6,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: UI.Subtitle, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629018542}
+          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
+          m_MethodName: ReadSubtitle
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 340c18e7fc095e143b5d5e43d1a4688f,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: UI.Subtitle, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629018542}
+          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
+          m_MethodName: ReadSubtitle
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 0ee590cc4840a474daf942cedfff65d5,
               type: 2}
             m_ObjectArgumentAssemblyTypeName: UI.Subtitle, Assembly-CSharp
             m_IntArgument: 0
@@ -4645,7 +4695,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawners:
-  - {fileID: 7681059474193195337}
   - {fileID: 140978430}
   - {fileID: 433858296}
   - {fileID: 511444583}
@@ -4672,6 +4721,7 @@ MonoBehaviour:
   - {fileID: 1997562899}
   - {fileID: 2000172532}
   - {fileID: 2016437364}
+  - {fileID: 7681059474193195337}
   _initialGlucoseLevel: 50
   _initialSodiumLevel: 50
   _totalGameTime: 180
@@ -14683,8 +14733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2944806154735300834, guid: 7afde45351dee2b43920dda8f866e1b0, type: 3}
-  _minInterval: 0.5
-  _maxInterval: 1
+  _minInterval: 1
+  _maxInterval: 1.5
   _spawnRadius: 0.65
 --- !u!4 &7681059474193195342
 Transform:

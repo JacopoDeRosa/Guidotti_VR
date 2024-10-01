@@ -15,11 +15,11 @@ namespace Molecules
         [SerializeField] private float _minPulseFrequency, _maxPulseFrequency;
         [SerializeField] private Vector3 _pulseHalfExtents = Vector3.one;
         [SerializeField] private Vector3 _pulseCenter = Vector3.zero;
-        [SerializeField] private float _destroyDelay = 0.1f;
         [SerializeField] private LayerMask _moleculeLayer;
         [SerializeField] private MoleculeTypeFlags _wantedMoleculeTypes;
         [SerializeField] private float _deathDelay = 1.0f;
         [SerializeField] private float _rejectionDelay = 1.0f;
+        [SerializeField] private float _destroyDelay = 0.1f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
@@ -140,7 +140,7 @@ namespace Molecules
         
         private void Reject(Invokan invokan)
         {
-            invokan.Rigidbody.AddForce(transform.up * _rejectionForce, ForceMode.Impulse);
+            invokan.LaunchMolecule(transform.up, _rejectionForce);
             invokan.DeleteMolecule(2);
             _plugged = false;
         }
@@ -156,6 +156,8 @@ namespace Molecules
             }
             
             OnReceptorPlugged.Invoke();
+            
+            Destroy(invokan.gameObject, _deathDelay);
             
             yield return new WaitForSeconds(_deathDelay);
             

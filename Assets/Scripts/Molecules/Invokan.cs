@@ -33,6 +33,11 @@ namespace Molecules
             {
                 _rigidbody = GetComponent<Rigidbody>();
             }
+            
+            if(_fadeController == null)
+            {
+                _fadeController = GetComponent<FadeInMaterialController>();
+            }
         }
 
         private void Awake()
@@ -95,6 +100,17 @@ namespace Molecules
         {
             Destroy(gameObject, delay);
             _fadeController.FadeOut(1);
+        }
+        
+        public void LaunchMolecule(Vector3 direction, float force)
+        {
+            _rigidbody.isKinematic = false;
+            _rigidbody.AddForce(direction * force, ForceMode.Impulse);
+            // Destroy all colliders
+            foreach (Collider collider in GetComponents<Collider>())
+            {
+                Destroy(collider);
+            }
         }
     }
 }

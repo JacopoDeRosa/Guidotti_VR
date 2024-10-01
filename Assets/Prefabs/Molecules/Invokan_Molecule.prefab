@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3128962241821427436}
   - component: {fileID: 3070636994141018300}
   - component: {fileID: -4301187409407349498}
+  - component: {fileID: 2501018720817156330}
   m_Layer: 6
   m_Name: Invokan_Molecule
   m_TagString: Untagged
@@ -244,6 +245,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _globalSpeed: {x: 0, y: 0, z: 1.5}
   _rotationSpeed: {x: 21, y: 12, z: 23}
+--- !u!65 &2501018720817156330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944806154735300834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.35, z: 0.1}
+  m_Center: {x: 0, y: 0.28, z: -0.02}
 --- !u!1001 &4173023958632264458
 PrefabInstance:
   m_ObjectHideFlags: 0
