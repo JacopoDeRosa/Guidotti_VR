@@ -54,17 +54,14 @@ MonoBehaviour:
   _maxPulseFrequency: 2
   _pulseHalfExtents: {x: 0.6, y: 0.75, z: 0.2}
   _pulseCenter: {x: 0, y: 0.85, z: 0}
-  _destroyDelay: 0.1
   _moleculeLayer:
     serializedVersion: 2
     m_Bits: 8
   _wantedMoleculeTypes: 3
   _deathDelay: 2
   _rejectionDelay: 1
+  _destroyDelay: 0.1
   OnReceptorPlugged:
-    m_PersistentCalls:
-      m_Calls: []
-  OnReceptorDestroyed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3964032647384006414}
@@ -79,6 +76,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnReceptorDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
   OnMoleculeConsumed:
     m_PersistentCalls:
       m_Calls: []

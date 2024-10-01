@@ -27,10 +27,11 @@ namespace Materials
         private IEnumerator FadeInMaterial(Material material, float duration)
         {
             float t = 0;
-            while (t < _fadeInPosition)
+            while (t < 1)
             {
                 t += Time.deltaTime / duration;
-                material.SetFloat("_Bar_Position", t);
+                
+                material.SetFloat("_Bar_Position", Mathf.Lerp(_fadeOutPosition, _fadeInPosition, t));
                 yield return null;
             }
         }
@@ -46,11 +47,12 @@ namespace Materials
         
         private IEnumerator FadeOutMaterial(Material material, float duration)
         {
-            float t = 1;
-            while (t > _fadeOutPosition)
+            float t = 0;
+            while (t < 1)
             {
-                t -= Time.deltaTime / duration;
-                material.SetFloat("_Bar_Position", t);
+                t += Time.deltaTime / duration;
+                
+                material.SetFloat("_Bar_Position", Mathf.Lerp(_fadeInPosition, _fadeOutPosition, t));
                 yield return null;
             }
         }

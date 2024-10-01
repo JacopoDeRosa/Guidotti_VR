@@ -16,6 +16,7 @@ namespace Molecules
         [SerializeField] private InteractableUnityEventWrapper _eventWrapper;
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private FadeInMaterialController _fadeController;
+        [SerializeField] private float _lifeTimeIfNotPicked = 15f;
 
         public event Action OnHandPickUp;
         public event Action OnHandDrop;
@@ -47,12 +48,14 @@ namespace Molecules
             _eventWrapper.WhenSelect.AddListener(OnPickUp);
             _eventWrapper.WhenUnselect.AddListener(OnDrop);
             _fadeController.FadeIn(1);
+            StartCoroutine(LifeTimeRoutine());
         }
 
         public void OnPickUp()
         {
             OnHandPickUp?.Invoke();
             _animation.enabled = false;
+            StopCoroutine(LifeTimeRoutine());
         }
 
         public void OnDrop()
@@ -96,10 +99,17 @@ namespace Molecules
             }
         }
         
-        public void DeleteMolecule(float delay)
+        private IEnumerator LifeTimeRoutine()
         {
-            Destroy(gameObject, delay);
+            yield return new WaitForSeconds(_lifeTimeIfNotPicked);
+            DeleteMolecule(1);
+        }
+        
+        public void DeleteMolecule(float delay)
+        { 
             _fadeController.FadeOut(1);
+            Destroy(gameObject, delay);
+           
         }
         
         public void LaunchMolecule(Vector3 direction, float force)

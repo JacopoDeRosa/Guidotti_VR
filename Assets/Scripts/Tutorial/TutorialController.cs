@@ -1,4 +1,5 @@
 ﻿using System;
+using GameLogic;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -22,6 +23,13 @@ namespace Tutorial
             _currentStep++;
             _director.playableAsset = _tutorialSteps[_currentStep];
             _director.Play();
+        }
+        
+        public void SkipTutorial()
+        {
+            _director.Stop();
+            _director.playableAsset = null;
+            FindObjectOfType<GameController>().StartGame();
         }
     }
 }

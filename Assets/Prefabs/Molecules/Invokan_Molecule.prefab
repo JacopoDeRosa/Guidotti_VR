@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 2944806154735300833}
   - component: {fileID: 6289151629723452159}
   - component: {fileID: 749749500}
+  - component: {fileID: 2501018720817156330}
   - component: {fileID: 3128962241821427436}
   - component: {fileID: 3070636994141018300}
   - component: {fileID: -4301187409407349498}
-  - component: {fileID: 2501018720817156330}
   m_Layer: 6
   m_Name: Invokan_Molecule
   m_TagString: Untagged
@@ -187,6 +187,7 @@ MonoBehaviour:
   _eventWrapper: {fileID: 2944806154735300833}
   _rigidbody: {fileID: 2243053309887648255}
   _fadeController: {fileID: 3070636994141018300}
+  _lifeTimeIfNotPicked: 15
 --- !u!65 &749749500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -200,6 +201,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &2501018720817156330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944806154735300834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.35, z: 0.1}
+  m_Center: {x: 0, y: 0.28, z: -0.02}
 --- !u!114 &3128962241821427436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,8 +243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _meshRenderer: {fileID: 3325937528843464590}
   _materialIndexes: 00000000
-  _fadeOutPosition: -0.5
-  _fadeInPosition: 1
+  _fadeOutPosition: 1
+  _fadeInPosition: -0.5
 --- !u!114 &-4301187409407349498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,21 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c685a626253b4c0688604c2642d5cb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _globalSpeed: {x: 0, y: 0, z: 1.5}
-  _rotationSpeed: {x: 21, y: 12, z: 23}
---- !u!65 &2501018720817156330
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2944806154735300834}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.05, y: 0.35, z: 0.1}
-  m_Center: {x: 0, y: 0.28, z: -0.02}
+  _globalSpeed: {x: 0, y: 0, z: 0.75}
+  _minRotationSpeed: {x: 15, y: 15, z: 15}
+  _maxRotationSpeed: {x: -15, y: -15, z: -15}
 --- !u!1001 &4173023958632264458
 PrefabInstance:
   m_ObjectHideFlags: 0

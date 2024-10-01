@@ -20,9 +20,12 @@ namespace Molecules
         [SerializeField] private float _deathDelay = 1.0f;
         [SerializeField] private float _rejectionDelay = 1.0f;
         [SerializeField] private float _destroyDelay = 0.1f;
+        [SerializeField] private float _pluggedTime = 1.0f;
+        [SerializeField] private float _activationDelay = 1f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
+        private float _lifeTime;
         
         private MoleculeTypeFlags _reservedMoleculeThisPulse;
         private List<ReceptorMolecule> _reservedMoleculesThisPulse = new List<ReceptorMolecule>();
@@ -41,12 +44,15 @@ namespace Molecules
 
         private void Start()
         {
+            _nextPulseTime = Time.time + Random.Range(_minPulseFrequency, _maxPulseFrequency);
             OnReceptorSpawned.Invoke();
         }
 
         private void Update()
         {
-            if (_plugged) return;
+            _lifeTime += Time.deltaTime;
+            
+            if (_plugged || _lifeTime < _activationDelay) return;
             
             if (Time.time >= _nextPulseTime)
             {
@@ -99,6 +105,7 @@ namespace Molecules
             {
                 molecule.Rigidbody.velocity = Vector3.zero;
                 molecule.Rigidbody.AddForce((transform.position - molecule.transform.position).normalized * _attractionForce, ForceMode.Impulse);
+                OnMoleculeConsumed.Invoke();
             }
             
             ResetReceptor(false);
@@ -120,21 +127,6 @@ namespace Molecules
         
         public void PlugReceptor(Invokan invokan)
         {
-            /*
-           if(Random.value < _rejectionChance)
-           {
-               Debug.Log("Rejected");
-               Destroy(invokan.gameObject);
-           }
-           else
-           {
-               _plugged = true;
-               ResetReceptor();
-               Destroy(gameObject, _deathDelay);
-               Destroy(invokan.gameObject, _deathDelay);
-               OnReceptorPlugged.Invoke();
-           }
-           */
             StartCoroutine(ReceptorPluggedRoutine(invokan));
         }
         
@@ -152,12 +144,18 @@ namespace Molecules
             if (_rejectionChance > 0)
             {
                 yield return new WaitForSeconds(_rejectionDelay);
-                if (Random.value < _rejectionChance) Reject(invokan);
+                
+                if (Random.value < _rejectionChance)
+                {
+                    Reject(invokan);
+                    yield break;
+                }
             }
             
-            OnReceptorPlugged.Invoke();
+            yield return new WaitForSeconds(_pluggedTime);
             
-            Destroy(invokan.gameObject, _deathDelay);
+            OnReceptorPlugged.Invoke();
+            invokan.DeleteMolecule(_deathDelay);
             
             yield return new WaitForSeconds(_deathDelay);
             

@@ -16,6 +16,12 @@ namespace UI
             StartCoroutine(WriteSubtitleRoutine(subtitle));
         }
         
+        public void ClearSubtitle()
+        {
+            StopAllCoroutines();
+            _subtitleText.text = "";
+        }
+        
         private IEnumerator WriteSubtitleRoutine(Subtitle subtitle)
         {
             WaitForSeconds wait = new WaitForSeconds(_letterSpeed);

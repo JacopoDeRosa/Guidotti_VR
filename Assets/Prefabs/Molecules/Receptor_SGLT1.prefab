@@ -48,23 +48,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rejectionChance: 0.35
-  _rejectionForce: 10
+  _rejectionForce: 2
   _attractionForce: 2
   _minPulseFrequency: 1
   _maxPulseFrequency: 2
   _pulseHalfExtents: {x: 0.7, y: 0.75, z: 0.2}
   _pulseCenter: {x: 0, y: 0.85, z: 0}
-  _destroyDelay: 0.1
   _moleculeLayer:
     serializedVersion: 2
     m_Bits: 8
   _wantedMoleculeTypes: 3
   _deathDelay: 2
-  _rejectionDelay: 1
+  _rejectionDelay: 1.5
+  _destroyDelay: 0.1
   OnReceptorPlugged:
-    m_PersistentCalls:
-      m_Calls: []
-  OnReceptorDestroyed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4157506041199934368}
@@ -79,6 +76,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnReceptorDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
   OnMoleculeConsumed:
     m_PersistentCalls:
       m_Calls: []
