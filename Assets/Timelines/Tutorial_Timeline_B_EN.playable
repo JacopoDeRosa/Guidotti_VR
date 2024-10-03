@@ -178,7 +178,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Tutorial F - IT
+    m_DisplayName: Tutorial F - EN
   - m_Version: 1
     m_Start: 35.4
     m_ClipIn: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Tutorial G - IT
+    m_DisplayName: Tutorial G - EN
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: fe4dc730df4fc7940af674a20dbc62d3, type: 3}
+  m_Clip: {fileID: 8300000, guid: 5c91f932acfd00243a93e3d93cbe640b, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 1d2bf7227e79a1b49a3dc5e8f30bb2f6, type: 3}
+  m_Clip: {fileID: 8300000, guid: fc8ba558b9cf4934693b5b2805cb50b9, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
