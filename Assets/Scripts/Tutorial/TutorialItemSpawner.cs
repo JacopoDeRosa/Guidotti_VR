@@ -20,17 +20,7 @@ namespace Tutorial
         private IEnumerator SpawnItemRoutine()
         {
             _spawnedItem = Instantiate(_itemPrefab, transform.position, Quaternion.identity);
-            
-            _spawnedItem.transform.localScale = Vector3.zero;
-            
-            float t = 0;
-            while (t < 1)
-            {
-                t += Time.deltaTime;
-                _spawnedItem.transform.localScale = Vector3.one * t;
-                yield return null;
-            }
-            
+            yield return null;
         }
     }
 }

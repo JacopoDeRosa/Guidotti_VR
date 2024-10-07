@@ -173,6 +173,7 @@ MonoBehaviour:
   _eventWrapper: {fileID: 2944806154735300833}
   _rigidbody: {fileID: 2243053309887648255}
   _fadeController: {fileID: 3474738273745323211}
+  _lifeTimeIfNotPicked: 300
 --- !u!65 &749749500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,8 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _meshRenderer: {fileID: 3325937528843464590}
   _materialIndexes: 00000000
-  _fadeOutPosition: -0.5
-  _fadeInPosition: 1
+  _fadeOutPosition: 1
+  _fadeInPosition: -0.5
 --- !u!1001 &4173023958632264458
 PrefabInstance:
   m_ObjectHideFlags: 0

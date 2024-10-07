@@ -9,6 +9,7 @@ namespace GameLogic
     {
         [SerializeField] private Receptor[] _spawnPool;
         [SerializeField] private Vector2 _respawnTime = new Vector2(5f, 10f);
+        [SerializeField] private float _instantSpawnChance = 0.1f;
         
         private Receptor _currentReceptor;
         private bool _busy;
@@ -41,8 +42,16 @@ namespace GameLogic
 
         protected override void OnSetSpawning(bool value)
         {
-            if (value) StartCoroutine(SpawnRoutine());
-            else StopAllCoroutines();
+            if (value)
+            {
+                StartCoroutine(SpawnRoutine());
+                if(Random.value <= _instantSpawnChance) SpawnReceptor();
+            }
+            else
+            {
+                StopAllCoroutines();
+                if(_currentReceptor != null) Destroy(_currentReceptor.gameObject);
+            }
         }
 
         private void Update()

@@ -26,13 +26,15 @@ namespace UI
         private void OnSodiumChanged(float value)
         {
             _sodiumBar.SetValue(value);
-            _sodiumText.text = "Sodium: " + value + "%";
+            int val = (int) value;
+            _sodiumText.text = "Sodium: " + val + "%";
         }
         
         private void OnGlucoseChanged(float value)
         {
             _glucoseBar.SetValue(value);
-            _glucoseText.text = "Glucose: " + value + "%";
+            int val = (int) value;
+            _glucoseText.text = "Glucose: " + val + "%";
         }
 
         private void OnTimerChanged(float value)

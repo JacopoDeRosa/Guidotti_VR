@@ -9,6 +9,7 @@ namespace GameLogic
         public void SetSpawning(bool value)
         {
             _spawning = value;
+            OnSetSpawning(value);
         }
         
         protected virtual void OnSetSpawning(bool value)

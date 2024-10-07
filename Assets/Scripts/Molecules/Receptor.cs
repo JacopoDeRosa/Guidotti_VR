@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using GameLogic;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
@@ -22,18 +23,24 @@ namespace Molecules
         [SerializeField] private float _destroyDelay = 0.1f;
         [SerializeField] private float _pluggedTime = 1.0f;
         [SerializeField] private float _activationDelay = 1f;
+        [SerializeField] private float _valueDropOnPlug = 1f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
         private float _lifeTime;
+
+        private GameController _gameController;
         
         private MoleculeTypeFlags _reservedMoleculeThisPulse;
         private List<ReceptorMolecule> _reservedMoleculesThisPulse = new List<ReceptorMolecule>();
         
         public UnityEvent OnReceptorPlugged;
+        public UnityEvent OnInvokanaAccepted;
         public UnityEvent OnReceptorDestroyed;
         public UnityEvent OnMoleculeConsumed;
         public UnityEvent OnReceptorSpawned;
+        
+        public bool Plugged => _plugged;
         
         private void OnDrawGizmosSelected()
         {
@@ -106,6 +113,9 @@ namespace Molecules
                 molecule.Rigidbody.velocity = Vector3.zero;
                 molecule.Rigidbody.AddForce((transform.position - molecule.transform.position).normalized * _attractionForce, ForceMode.Impulse);
                 OnMoleculeConsumed.Invoke();
+                if(_gameController == null) _gameController = FindObjectOfType<GameController>();
+                _gameController.AddSodium(1);
+                _gameController.AddGlucose(1);
             }
             
             ResetReceptor(false);
@@ -152,11 +162,16 @@ namespace Molecules
                 }
             }
             
+            OnInvokanaAccepted.Invoke();
+            
             yield return new WaitForSeconds(_pluggedTime);
             
             OnReceptorPlugged.Invoke();
             invokan.DeleteMolecule(_deathDelay);
-            
+            if(_gameController == null) _gameController = FindObjectOfType<GameController>();
+            _gameController.AddSodium(-_valueDropOnPlug);
+            _gameController.AddGlucose(-_valueDropOnPlug);
+                
             yield return new WaitForSeconds(_deathDelay);
             
             OnReceptorDestroyed.Invoke();

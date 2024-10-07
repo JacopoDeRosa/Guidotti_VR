@@ -10,10 +10,16 @@ namespace Tutorial
         {
             base.OnInspectorGUI();
             TutorialController tutorialController = (TutorialController) target;
+            GUILayout.BeginHorizontal();
             if (GUILayout.Button("Next Step"))
             {
                 tutorialController.NextStep();
             }
+            if (GUILayout.Button("Skip Tutorial"))
+            {
+                tutorialController.SkipTutorial();
+            }
+            GUILayout.EndHorizontal();
         }
     }
 }

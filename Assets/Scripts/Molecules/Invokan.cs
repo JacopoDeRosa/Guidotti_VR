@@ -18,10 +18,14 @@ namespace Molecules
         [SerializeField] private FadeInMaterialController _fadeController;
         [SerializeField] private float _lifeTimeIfNotPicked = 15f;
 
+        private bool _freeFloating = false;
+        
         public event Action OnHandPickUp;
         public event Action OnHandDrop;
 
         public Rigidbody Rigidbody => _rigidbody;
+        
+        public bool FreeFloating => _freeFloating;
         
         private void OnValidate()
         {
@@ -43,19 +47,16 @@ namespace Molecules
 
         private void Awake()
         {
-           // StartCoroutine(DebugRoutine());
-            
             _eventWrapper.WhenSelect.AddListener(OnPickUp);
             _eventWrapper.WhenUnselect.AddListener(OnDrop);
             _fadeController.FadeIn(1);
-            StartCoroutine(LifeTimeRoutine());
         }
 
         public void OnPickUp()
         {
             OnHandPickUp?.Invoke();
             _animation.enabled = false;
-            StopCoroutine(LifeTimeRoutine());
+            _freeFloating = false;
         }
 
         public void OnDrop()
@@ -64,17 +65,17 @@ namespace Molecules
             TryPlugReceptor();
         }
         
-        private void TryPlugReceptor()
+        public void TryPlugReceptor()
         {
             Collider[] colliders = Physics.OverlapSphere(transform.position, _attachmentRange, _receptorLayer, QueryTriggerInteraction.Collide);
             foreach (Collider collider in colliders)
             {
                 Receptor receptor = collider.GetComponent<Receptor>();
-                if (receptor == null) continue;
+                if (receptor == null || receptor.Plugged) continue;
                 transform.position = receptor.transform.position;
                 transform.rotation = receptor.transform.rotation;
                 receptor.PlugReceptor(this);
-                
+                DestroyAllColliders();
             }
         }
 
@@ -90,21 +91,6 @@ namespace Molecules
             Gizmos.DrawSphere(Vector3.zero, _attachmentRange);
         }
         
-        private IEnumerator DebugRoutine()
-        {
-            while (true)
-            {
-                TryPlugReceptor();
-                yield return new WaitForSeconds(2f);
-            }
-        }
-        
-        private IEnumerator LifeTimeRoutine()
-        {
-            yield return new WaitForSeconds(_lifeTimeIfNotPicked);
-            DeleteMolecule(1);
-        }
-        
         public void DeleteMolecule(float delay)
         { 
             _fadeController.FadeOut(1);
@@ -116,10 +102,31 @@ namespace Molecules
         {
             _rigidbody.isKinematic = false;
             _rigidbody.AddForce(direction * force, ForceMode.Impulse);
-            // Destroy all colliders
+            DestroyAllColliders();
+        }
+        
+        private void DestroyAllColliders()
+        {
             foreach (Collider collider in GetComponents<Collider>())
             {
                 Destroy(collider);
+            }
+        }
+        
+        public void SetFreeFloating(bool freeFloating)
+        {
+            _freeFloating = freeFloating;
+        }
+
+        private void Update()
+        {
+            if (_freeFloating)
+            {
+                _lifeTimeIfNotPicked -= Time.deltaTime;
+                if (_lifeTimeIfNotPicked <= 0)
+                {
+                    DeleteMolecule(1);
+                }
             }
         }
     }

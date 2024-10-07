@@ -8,7 +8,18 @@ namespace UI
     {
         [SerializeField] private TMP_Text _subtitleText;
         [SerializeField] private float _letterSpeed = 0.02f;
+        [SerializeField] private SubtitleBundle _subtitleBundle;
         
+        
+        public void SetSubtitleBundle(SubtitleBundle subtitleBundle)
+        {
+            _subtitleBundle = subtitleBundle;
+        }
+        
+        public void ReadSubtitle(int index)
+        {
+            ReadSubtitle(_subtitleBundle.GetSubtitle(index));
+        }
         
         public void ReadSubtitle(Subtitle subtitle)
         {

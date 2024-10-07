@@ -42,6 +42,8 @@ namespace Interaction
                 {
                     OnInteract.Invoke();
                     _interactedTime = 0;
+                    _isInteracting = false;
+                    _renderer.material.color = _calmColor;
                     if (_disableOnInteract) gameObject.SetActive(false);
                 }
             }

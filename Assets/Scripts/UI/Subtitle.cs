@@ -2,7 +2,7 @@
 
 namespace UI
 {
-    [CreateAssetMenu(menuName = "UI/Subtitle", fileName = "New Subtitle")]
+    [CreateAssetMenu(menuName = "UI/Subtitle", fileName = "Subtitles/New Subtitle")]
     public class Subtitle : ScriptableObject
     {
         [SerializeField, TextArea] private string _text;
