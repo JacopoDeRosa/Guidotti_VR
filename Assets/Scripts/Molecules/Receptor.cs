@@ -24,6 +24,8 @@ namespace Molecules
         [SerializeField] private float _pluggedTime = 1.0f;
         [SerializeField] private float _activationDelay = 1f;
         [SerializeField] private float _valueDropOnPlug = 1f;
+        [SerializeField] private float _glucoseAddedOnConsume = 1f;
+        [SerializeField] private float _sodiumAddedOnConsume = 1f;
         
         private float _nextPulseTime;
         private bool _plugged = false;
@@ -114,8 +116,8 @@ namespace Molecules
                 molecule.Rigidbody.AddForce((transform.position - molecule.transform.position).normalized * _attractionForce, ForceMode.Impulse);
                 OnMoleculeConsumed.Invoke();
                 if(_gameController == null) _gameController = FindObjectOfType<GameController>();
-                _gameController.AddSodium(1);
-                _gameController.AddGlucose(1);
+                _gameController.AddSodium(_sodiumAddedOnConsume);
+                _gameController.AddGlucose(_glucoseAddedOnConsume);
             }
             
             ResetReceptor(false);
