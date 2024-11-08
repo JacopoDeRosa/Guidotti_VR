@@ -51,8 +51,8 @@ MonoBehaviour:
   _minInitialForce: {x: 0, y: 0, z: 1}
   _maxInitialTorque: {x: 0.01, y: 0.01, z: 0.01}
   _minInitialTorque: {x: -0.01, y: -0.01, z: -0.01}
-  _maxInitialScale: 0.9
-  _minInitialScale: 0.75
+  _maxInitialScale: 1
+  _minInitialScale: 0.6
   _lifetime: 12
   _moleculeType: 1
   _rigidbody: {fileID: 3865414612547934185}

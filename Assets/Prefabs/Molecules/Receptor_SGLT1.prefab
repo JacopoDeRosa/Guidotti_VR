@@ -47,13 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af50906586e4d446ac81989de887712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rejectionChance: 0.35
+  _rejectionChance: 0.25
   _rejectionForce: 2
   _attractionForce: 2
   _minPulseFrequency: 1
   _maxPulseFrequency: 2
-  _pulseHalfExtents: {x: 0.7, y: 0.75, z: 0.2}
-  _pulseCenter: {x: 0, y: 0.85, z: 0}
+  _pulseHalfExtents: {x: 0.3, y: 0.5, z: 0.2}
+  _pulseCenter: {x: 0, y: 0.4, z: 0}
   _moleculeLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -61,6 +61,11 @@ MonoBehaviour:
   _deathDelay: 2
   _rejectionDelay: 1.5
   _destroyDelay: 0.1
+  _pluggedTime: 1
+  _activationDelay: 1
+  _valueDropOnPlug: 1
+  _glucoseAddedOnConsume: 0.3
+  _sodiumAddedOnConsume: 0.4
   OnReceptorPlugged:
     m_PersistentCalls:
       m_Calls:
@@ -76,6 +81,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnInvokanaAccepted:
+    m_PersistentCalls:
+      m_Calls: []
   OnReceptorDestroyed:
     m_PersistentCalls:
       m_Calls: []
