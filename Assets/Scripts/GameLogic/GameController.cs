@@ -26,6 +26,10 @@ namespace GameLogic
         public event Action<float> OnGlucoseChanged;
         public event Action<float> OnSodiumChanged; 
         public event Action<float> OnTimeLeftChanged;
+        
+        public event Action OnGameOver; 
+        
+        public event Action OnGameStarted;
 
         private void Awake()
         {
@@ -45,6 +49,7 @@ namespace GameLogic
             SetSodium(_initialSodiumLevel);
             SetTimeLeft(_totalGameTime);
             _gameStarted = true;
+            OnGameStarted?.Invoke();
         }
 
         private void OnValidate()
@@ -68,6 +73,7 @@ namespace GameLogic
             OnSodiumChanged?.Invoke(_sodiumLevel);
             _gameOverScreen.SetActive(true);
             _gameStarted = false;
+            OnGameOver?.Invoke();
             foreach (Invokan invokan in FindObjectsOfType<Invokan>())
             {
                 if(invokan.FreeFloating == false) Destroy(invokan.gameObject);
