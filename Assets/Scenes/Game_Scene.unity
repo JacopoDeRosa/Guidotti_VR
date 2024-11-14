@@ -3532,6 +3532,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9e994187fda124140aa5a003c44d2454, type: 2}
     - {fileID: 11400000, guid: dcd4064327646044e9c81494e7bf6332, type: 2}
     - {fileID: 11400000, guid: 903f2628f12f15d409f71bbd01adcdd4, type: 2}
+    - {fileID: 11400000, guid: cbab44ef2df8a2242959baaefc5f5812, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3612,20 +3613,6 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 5
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 629018542}
-          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
-          m_MethodName: ReadSubtitle
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 6
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3655,6 +3642,34 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629018542}
+          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
+          m_MethodName: ReadSubtitle
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 629018542}
+          m_TargetAssemblyTypeName: UI.SubtitleController, Assembly-CSharp
+          m_MethodName: ReadSubtitle
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
