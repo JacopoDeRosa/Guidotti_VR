@@ -6971,7 +6971,7 @@ MonoBehaviour:
   - {fileID: 7681059474193195337}
   _initialGlucoseLevel: 100
   _initialSodiumLevel: 100
-  _totalGameTime: 5
+  _totalGameTime: 75
   _gameOverScreen: {fileID: 712453806}
   _glucoseDecreaseRate: 1.1
   _sodiumDecreaseRate: 1
@@ -9681,7 +9681,7 @@ PrefabInstance:
     - target: {fileID: 4204059856842617038, guid: 41d39cde2591f624bb40e0d2b0a708d0,
         type: 3}
       propertyPath: m_text
-      value: High-Scores
+      value: High Scores
       objectReference: {fileID: 0}
     - target: {fileID: 4204059856842617038, guid: 41d39cde2591f624bb40e0d2b0a708d0,
         type: 3}
@@ -9963,7 +9963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameController: {fileID: 1052926590}
-  debugPath: C:/Users/Jacopo/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
+  debugPath: C:/Users/Utente205.EVENTS/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
   _highScoreData:
     scores: []
 --- !u!4 &1403701950
