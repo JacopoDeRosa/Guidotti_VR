@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sub F 2 - IT
   m_EditorClassIdentifier: 
   _text: "Hai bloccato un recettore SGLT2, ma ci sono anche recettori SGLT1. A scopo
-    di visualizzazione, questi recettori SGLT1 avranno macchie scure su di essi.
-    Questi recettori saranno pi\xF9 difficili da bloccare con Invokana, poich\xE9
-    potrebbero rifiutare Invokana. In tal caso, dovrai bloccarlo pi\xF9 volte.\r"
+    di visualizzazione, questi recettori SGLT1 saranno gialli. Questi recettori saranno
+    pi\xF9 difficili da bloccare, poich\xE9 potrebbero rifiutare Invokana. In tal
+    caso, dovrai bloccarlo\_pi\xF9\_volte."
   _duration: 3
