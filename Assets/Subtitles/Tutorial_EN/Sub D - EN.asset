@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub D - EN
   m_EditorClassIdentifier: 
-  _text: There are SGLT1 and SGLT2 receptors. The one in front of you right now is
-    SGLT2.
+  _text: "There are SGLT1 and SGLT2 receptors. The one on the left is an SGLT1 receptor,
+    while the one on the right is SGLT2.\r"
   _duration: 3

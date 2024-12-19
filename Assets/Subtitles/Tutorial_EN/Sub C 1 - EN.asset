@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub C 1 - EN
   m_EditorClassIdentifier: 
-  _text: Glucose and sodium have entered a sodium-glucose cotransporter, also known
-    as SGLT. They have been reabsorbed into the bloodstream. This has caused an increase
-    in glucose and sodium levels in the blood.
+  _text: The glucose and sodium molecules have entered a sodium-glucose cotransporter,
+    also known as SGLT. They have been reabsorbed back into the bloodstream. This
+    has caused an increase in glucose and sodium levels in the blood.
   _duration: 3

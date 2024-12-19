@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub A - IT
   m_EditorClassIdentifier: 
-  _text: "Benvenuto. Attualmente ti trovi all'interno del tubulo prossimale del rene
-    di un paziente diabetico. \xC8 qui che il glucosio e il sodio vengono riassorbiti
+  _text: "\rBenvenuto. Attualmente ti trovi all'interno del tubulo prossimale del
+    rene di un paziente diabetico. \xC8 qui che il glucosio e il sodio vengono riassorbiti
     nel sangue attraverso i cotrasportatori sodio-glucosio che rivestono la parete
     di questa sezione del tubulo. Le molecole che non vengono riassorbite dal filtrato
-    vengono espulse dal corpo."
+    vengono espulse dal corpo.\r"
+  _duration: 3

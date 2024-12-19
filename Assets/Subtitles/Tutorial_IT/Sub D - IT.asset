@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub D - IT
   m_EditorClassIdentifier: 
-  _text: "Ci sono recettori SGLT1 e SGLT2. Quello davanti a te attualmente \xE8 SGLT2."
+  _text: "Ci sono recettori SGLT1 e SGLT2. Quello a sinistra \xE8 un recettore SGLT1,
+    mentre quello a destra \xE8 SGLT2."
+  _duration: 3

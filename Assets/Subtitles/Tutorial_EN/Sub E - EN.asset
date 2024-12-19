@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sub E - EN
   m_EditorClassIdentifier: 
   _text: This is Invokana, the trade name for canagliflozin. It is a medication used
-    to treat type 2 diabetes. Try to take the Invokana molecule and insert it into
-    the SGLT2.
+    to treat type 2 diabetes. Try to grab the Invokana molecule with your hand and
+    insert it into the SGLT2.
   _duration: 3

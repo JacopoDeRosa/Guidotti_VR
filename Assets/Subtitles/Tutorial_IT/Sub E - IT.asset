@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub E - IT
   m_EditorClassIdentifier: 
-  _text: "Questo \xE8 Invokana, il nome commerciale per canagliflozin. \xC8 un farmaco
-    utilizzato per trattare il diabete di tipo 2. Prova a prendere e inserire la
-    molecola di Invokana nel SGLT2."
+  _text: "Questa \xE8 Invokana, il nome commerciale della canagliflozina. \xC8 un
+    farmaco utilizzato per trattare il diabete di tipo 2. Prova a prendere la molecola
+    di Invokana con la mano e inserirla nel recettore SGLT2."
+  _duration: 3

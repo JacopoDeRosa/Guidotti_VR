@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub A - EN
   m_EditorClassIdentifier: 
-  _text: Welcome. You are currently inside the proximal tubule of a diabetic patient's
+  _text: "\rWelcome. You are currently inside the proximal tubule of a diabetic patient's
     kidney. It is here that glucose and sodium are reabsorbed into the blood through
     the sodium-glucose cotransporters that line the wall of this section of the tubule.
     The molecules that are not reabsorbed from the filtrate are expelled from the
-    body.
+    body.\r"
   _duration: 3

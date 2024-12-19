@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub F 2 - EN
   m_EditorClassIdentifier: 
-  _text: "You have blocked an SGLT2 receptor, but there are also SGLT1 receptors.
-    For visualization purposes, these SGLT1 receptors will be yellow. These receptors
-    will be more difficult to block, as they may reject Invokana. In that case, you
-    will need to block it multiple\_times."
+  _text: You have blocked an SGLT2 receptor. These receptors will be easier to block
+    compared to SGLT1 receptors, as Invokana has a lower affinity for SGLT1. For
+    SGLT1, you may have to block them multiple times.
   _duration: 3

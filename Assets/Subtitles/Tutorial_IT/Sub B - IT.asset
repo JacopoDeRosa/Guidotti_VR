@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub B - IT
   m_EditorClassIdentifier: 
-  _text: "Queste sono molecole di glucosio e sodio. La molecola di sodio \xE8 quella
-    a sinistra, mentre quella a destra \xE8 una molecola di glucosio."
+  _text: "\rQueste sono molecole di glucosio e sodio. La molecola di sodio \xE8 quella
+    a sinistra, mentre quella a destra \xE8 una molecola di glucosio.\r"
+  _duration: 3

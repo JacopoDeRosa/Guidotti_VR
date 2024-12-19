@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub B - EN
   m_EditorClassIdentifier: 
-  _text: These are molecules of glucose and sodium. The sodium molecule is on the
-    left, while the molecule on the right is a glucose molecule.
+  _text: "These are molecules of glucose and sodium. The sodium molecule is on the
+    left, while the molecule on the right is a glucose molecule.\r"
   _duration: 3
