@@ -1966,7 +1966,7 @@ PlayableDirector:
   m_GameObject: {fileID: 271111757}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 0}
+  m_PlayableAsset: {fileID: 11400000, guid: 24d91892b61964140849ba8bbcc7e236, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2015,17 +2015,21 @@ PlayableDirector:
   - key: {fileID: 3678218883045559460, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
     value: {fileID: 3917505967638324317}
   - key: {fileID: -7121073448682713399, guid: b0a702002e6cd644b969a9ad3f6d6af3, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1837746244}
   - key: {fileID: 4427674736892741085, guid: b0a702002e6cd644b969a9ad3f6d6af3, type: 2}
     value: {fileID: 6915632362285583866}
   - key: {fileID: -6663175581720970443, guid: b0a702002e6cd644b969a9ad3f6d6af3, type: 2}
     value: {fileID: 5208084629824122566}
   - key: {fileID: 6764138311356313725, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1837746244}
   - key: {fileID: 9128536356582446532, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
     value: {fileID: 6915632362285583866}
   - key: {fileID: -3532435361968670901, guid: 5f4ce70f0ee1d744abef7174c832fac9, type: 2}
     value: {fileID: 5208084629824122566}
+  - key: {fileID: 6495690070099832228, guid: f7db85a132426f0468b3cfe333ba5027, type: 2}
+    value: {fileID: 1837746244}
+  - key: {fileID: -2050178880048154956, guid: 24d91892b61964140849ba8bbcc7e236, type: 2}
+    value: {fileID: 1837746244}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &271111759
