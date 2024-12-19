@@ -1,5 +1,6 @@
 ﻿using System;
 using GameLogic;
+using Molecules;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
@@ -53,6 +54,10 @@ namespace Tutorial
             _director.playableAsset = null;
             OnTutorialEnd.Invoke();
             FindObjectOfType<GameController>().StartGame();
+            foreach (var invokan in FindObjectsOfType<Invokan>())
+            {
+                Destroy(invokan.gameObject);
+            }
         }
     }
 }

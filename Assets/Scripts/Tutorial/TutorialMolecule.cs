@@ -11,6 +11,7 @@ namespace Tutorial
         [SerializeField] private Vector3 _bobbingAmplitude = Vector3.one;
         [SerializeField] private Transform _disappearPosition;
         [SerializeField] private Vector3 _disappearScale = new Vector3(0.25f, 0.25f, 0.25f);
+        [SerializeField] private bool _appearOnEnable;
 
         private Vector3 _initialPosition;
         private Vector3 _topPosition;
@@ -65,6 +66,11 @@ namespace Tutorial
             }
 
             transform.localScale = Vector3.zero;
+        }
+
+        private void OnEnable()
+        {
+            if(_appearOnEnable) Appear();
         }
     }
 }
