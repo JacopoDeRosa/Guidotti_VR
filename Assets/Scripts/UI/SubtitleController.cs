@@ -8,6 +8,7 @@ namespace UI
     {
         [SerializeField] private TMP_Text _subtitleText;
         [SerializeField] private float _letterSpeed = 0.02f;
+        [SerializeField] private bool _printImmediately = true;
         [SerializeField] private SubtitleBundle _subtitleBundle;
         
         
@@ -37,6 +38,15 @@ namespace UI
         {
             WaitForSeconds wait = new WaitForSeconds(_letterSpeed);
             _subtitleText.text = "";
+            
+            if (_printImmediately)
+            {
+                _subtitleText.text = subtitle.Text;
+                yield return new WaitForSeconds(subtitle.Duration);
+                _subtitleText.text = "";
+                yield break;
+            }
+            
             foreach (char letter in subtitle.Text)
             {
                 _subtitleText.text += letter;

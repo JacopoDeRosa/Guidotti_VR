@@ -15,4 +15,4 @@ MonoBehaviour:
   _text: Invokana has prevented the reabsorption of glucose and sodium into the bloodstream
     by blocking the reabsorption mechanism. This has helped to lower glucose and
     sodium levels in the blood.
-  _duration: 3
+  _duration: 10

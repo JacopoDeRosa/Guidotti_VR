@@ -15,4 +15,4 @@ MonoBehaviour:
   _text: In diabetic patients, the body paradoxically produces more SGLT along the
     walls of the tubule, reabsorbing glucose and sodium molecules instead of expelling
     them. Over time, this will cause damage to the kidney.
-  _duration: 3
+  _duration: 10

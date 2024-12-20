@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Ci sono recettori SGLT1 e SGLT2. Quello a sinistra \xE8 un recettore SGLT1,
     mentre quello a destra \xE8 SGLT2."
-  _duration: 3
+  _duration: 10

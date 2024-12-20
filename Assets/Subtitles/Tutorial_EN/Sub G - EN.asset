@@ -16,4 +16,4 @@ MonoBehaviour:
     lower the glucose and sodium in the blood by blocking the sodium-glucose cotransporters
     with Invokana. You can monitor the glucose and sodium levels on your wristwatch,
     as well as the remaining time. Good luck!
-  _duration: 3
+  _duration: 10
