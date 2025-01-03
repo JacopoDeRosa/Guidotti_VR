@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "These are molecules of glucose and sodium. The sodium molecule is on the
     left, while the molecule on the right is a glucose molecule.\r"
-  _duration: 10
+  _duration: 30

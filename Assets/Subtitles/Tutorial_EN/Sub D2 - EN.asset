@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub D2 - EN
   m_EditorClassIdentifier: 
-  _text: In reality, these two types of receptors are not present in the same section
+  _text: 'In reality, these two types of receptors are not present in the same section
     of the tubule, but for educational purposes they will both be present, so as
     to demonstrate how Invokana interacts with them.
-  _duration: 11
+
+    ______________________________________________________________________________________
+
+    Lamacchia
+    O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186'
+  _duration: 30

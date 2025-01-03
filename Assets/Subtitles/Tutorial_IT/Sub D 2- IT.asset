@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub D 2- IT
   m_EditorClassIdentifier: 
-  _text: "\rIn realt\xE0, questi due tipi di recettori non sono presenti nella stessa
+  _text: "\rIn realt\xE0, questi due tipi di recettori non si trovano nella stessa
     sezione del tubulo, ma per scopi didattici saranno entrambi presenti, in modo
-    da dimostrare come Invokana interagisca con essi.\r\n"
-  _duration: 11
+    da dimostrare come Invokana interagisca con essi.\r\n______________________________________________________________________________________\nLamacchia
+    O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186"
+  _duration: 30

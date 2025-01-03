@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "\rHai bloccato un recettore SGLT2, che \xE8 pi\xF9 facile da inibire rispetto
     ai recettori SGLT1, poich\xE9 Invokana ha una minore affinit\xE0 per questi.
-    Per i recettori SGLT1, potrebbe essere necessario bloccarli pi\xF9 volte.\r"
-  _duration: 10
+    Per i recettori SGLT1, potrebbe essere necessario bloccarli pi\xF9 volte.\r\n______________________________________________________________________________________\r\nSchiattarella
+    GG, Bode D. Canagliflozin and myocardial oxidative stress: SGLT1 inhibition takes
+    centre stage. Eur Heart J. 2021 Dec 21;42(48):4961-4963.\r"
+  _duration: 30

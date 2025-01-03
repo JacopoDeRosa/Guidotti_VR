@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub F 1 - EN
   m_EditorClassIdentifier: 
-  _text: Invokana has prevented the reabsorption of glucose and sodium into the bloodstream
-    by blocking the reabsorption mechanism. This has helped to lower glucose and
-    sodium levels in the blood.
-  _duration: 10
+  _text: 'Invokana has prevented the reabsorption of glucose and sodium into the
+    bloodstream by blocking the reabsorption mechanism. This has helped to lower
+    glucose and sodium levels in the blood.
+
+    ______________________________________________________________________________________
+
+    Invokana.
+    RCP'
+  _duration: 30

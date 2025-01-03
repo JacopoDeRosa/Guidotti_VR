@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Sub D - IT
   m_EditorClassIdentifier: 
   _text: "Ci sono recettori SGLT1 e SGLT2. Quello a sinistra \xE8 un recettore SGLT1,
-    mentre quello a destra \xE8 SGLT2."
-  _duration: 10
+    mentre quello a destra \xE8 SGLT2.\n______________________________________________________________________________________\nLamacchia
+    O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186"
+  _duration: 30

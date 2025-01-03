@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "\rQueste sono molecole di glucosio e sodio. La molecola di sodio \xE8 quella
     a sinistra, mentre quella a destra \xE8 una molecola di glucosio.\r"
-  _duration: 10
+  _duration: 30

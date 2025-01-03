@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub E - EN
   m_EditorClassIdentifier: 
-  _text: This is Invokana, the trade name for canagliflozin. It is a medication used
-    to treat type 2 diabetes. Try to grab the Invokana molecule with your hand and
-    insert it into the SGLT2.
-  _duration: 10
+  _text: 'This is Invokana, the trade name for canagliflozin. It is a medication
+    used to treat type 2 diabetes. Try to grab the Invokana molecule with your hand
+    and insert it into the SGLT2.
+
+    ______________________________________________________________________________________
+
+    Invokana.
+    RCP'
+  _duration: 30
