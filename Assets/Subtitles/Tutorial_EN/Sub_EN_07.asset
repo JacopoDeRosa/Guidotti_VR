@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub F 1 - IT
+  m_Name: Sub_EN_07
   m_EditorClassIdentifier: 
-  _text: 'Invokana ha impedito il riassorbimento di glucosio e sodio nel flusso sanguigno
-    bloccando il meccanismo di riassorbimento. Questo ha contribuito ad abbassare
-    i livelli di glucosio e sodio nel sangue.
+  _text: 'This is Invokana, the trade name for canagliflozin. It is a medication
+    used to treat type 2 diabetes. Try to grab the Invokana molecule with your hand
+    and insert it into the SGLT2.
 
     ______________________________________________________________________________________
 

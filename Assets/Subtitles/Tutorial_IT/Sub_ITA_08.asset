@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub E - IT
+  m_Name: Sub_ITA_08
   m_EditorClassIdentifier: 
-  _text: "Questa \xE8 Invokana, il nome commerciale della canagliflozina. \xC8 un
-    farmaco utilizzato per trattare il diabete di tipo 2. Prova a prendere la molecola
-    di Invokana con la mano e inserirla nel recettore SGLT2.\n______________________________________________________________________________________\nInvokana.
-    RCP"
+  _text: 'Invokana ha impedito il riassorbimento di glucosio e sodio nel flusso sanguigno
+    bloccando il meccanismo di riassorbimento. Questo ha contribuito ad abbassare
+    i livelli di glucosio e sodio nel sangue.
+
+    ______________________________________________________________________________________
+
+    Invokana.
+    RCP'
   _duration: 30

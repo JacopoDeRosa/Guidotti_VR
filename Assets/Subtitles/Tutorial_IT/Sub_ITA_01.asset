@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub A - IT
+  m_Name: Sub_ITA_01
   m_EditorClassIdentifier: 
   _text: "\rBenvenuto. Attualmente ti trovi all'interno del tubulo prossimale del
     rene di un paziente diabetico. \xC8 qui che il glucosio e il sodio vengono riassorbiti

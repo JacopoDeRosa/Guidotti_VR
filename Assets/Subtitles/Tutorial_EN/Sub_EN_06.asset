@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub D - EN
+  m_Name: Sub_EN_06
   m_EditorClassIdentifier: 
-  _text: 'There are SGLT1 and SGLT2 receptors. The one on the left is an SGLT1 receptor,
-    while the one on the right is SGLT2.
+  _text: 'In reality, these two types of receptors are not present in the same section
+    of the tubule, but for educational purposes they will both be present, so as
+    to demonstrate how Invokana interacts with them.
 
     ______________________________________________________________________________________
 

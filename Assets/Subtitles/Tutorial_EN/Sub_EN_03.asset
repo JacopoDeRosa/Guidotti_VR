@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub C 2 - EN
+  m_Name: Sub_EN_03
   m_EditorClassIdentifier: 
-  _text: 'In diabetic patients, the body paradoxically produces more SGLT along the
-    walls of the tubule, reabsorbing glucose and sodium molecules instead of expelling
-    them. Over time, this will cause damage to the kidney.
+  _text: 'The glucose and sodium molecules have entered a sodium-glucose cotransporter,
+    also known as SGLT. They have been reabsorbed back into the bloodstream. This
+    has caused an increase in glucose and sodium levels in the blood.
 
     ______________________________________________________________________________________
 

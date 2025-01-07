@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub C 1 - EN
+  m_Name: Sub_ITA_04
   m_EditorClassIdentifier: 
-  _text: 'The glucose and sodium molecules have entered a sodium-glucose cotransporter,
-    also known as SGLT. They have been reabsorbed back into the bloodstream. This
-    has caused an increase in glucose and sodium levels in the blood.
-
-    ______________________________________________________________________________________
-
-    Insalaco
+  _text: "Nei pazienti diabetici, il corpo produce paradossalmente pi\xF9 SGLT lungo
+    le pareti del tubulo, riassorbendo le molecole di glucosio e sodio invece di
+    espellerle. Nel tempo, questo causer\xE0 danni al rene.\n______________________________________________________________________________________\nInsalaco
     M, Zanoli L, Rastelli S, Lentini P, Rapisarda F, Fatuzzo P, Castellino P, Granata
-    A. Gli inibitori del trasportatore Sodio-Glucosio di tipo 2 (SGLT2) nell''insufficienza
+    A. Gli inibitori del trasportatore Sodio-Glucosio di tipo 2 (SGLT2) nell'insufficienza
     renale cronica [Sodium Glucose Co-transporter Type 2 (SGLT2) Inhibitors in CKD].
-    G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian.'
+    G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian."
   _duration: 30
