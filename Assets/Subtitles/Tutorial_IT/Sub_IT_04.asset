@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub_EN_04
+  m_Name: Sub_IT_04
   m_EditorClassIdentifier: 
-  _text: "In diabetic patients, the body, paradoxically, produces more SGLT along
-    the walls of the tubule, reabsorbing glucose and sodium molecules instead of
-    expelling them. Over time, this will cause damage to the kidney.\r\n__________________________________________________________________________________________\r\nInsalaco
+  _text: "Nei pazienti diabetici, il corpo produce, paradossalmente, pi\xF9 SGLT
+    lungo le pareti del tubulo, riassorbendo le molecole di glucosio e sodio invece
+    di espellerle. Nel tempo, questo causer\xE0 danni al rene.\r\n__________________________________________________________________________________________\r\nInsalaco
     M, et al. G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian.\r"
   _duration: 30

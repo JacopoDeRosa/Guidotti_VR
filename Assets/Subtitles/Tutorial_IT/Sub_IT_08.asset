@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub_EN_05
+  m_Name: Sub_IT_08
   m_EditorClassIdentifier: 
-  _text: "At the renal level, SGLT1 and SGLT2 receptors are present. The one on the
-    left is an SGLT1 receptor, while the one on the right is an SGLT2 receptor.\r\n__________________________________________________________________________________________\r\nLamacchia
-    O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186\r"
+  _text: "Invokana ha impedito il riassorbimento di glucosio e sodio nel flusso sanguigno
+    bloccando il meccanismo di riassorbimento. Questo ha contribuito ad abbassare
+    i livelli di glucosio e sodio nel sangue.\r\n_________________________________________________________________________\r\nInvokana.
+    RCP\r"
   _duration: 30

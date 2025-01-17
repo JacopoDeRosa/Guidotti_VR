@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub_EN_10
+  m_Name: Sub_IT_10
   m_EditorClassIdentifier: 
-  _text: "This patient has elevated levels of glucose and sodium. Your task is to
-    lower the glucose and sodium in the blood by blocking the sodium-glucose cotransporters
-    with Invokana. You can monitor the glucose and sodium levels on your wristwatch,
-    as well as the remaining time. \n\nGood luck!"
-  _duration: 18.65143
+  _text: "Questo paziente ha livelli elevati di glucosio e sodio. Il tuo compito
+    \xE8 abbassare il glucosio e il sodio nel sangue bloccando i cotrasportatori
+    sodio-glucosio con Invokana. Puoi monitorare i livelli di glucosio e sodio sul
+    tuo orologio da polso, cos\xEC come il tempo rimanente. \n\nBuona fortuna!\r"
+  _duration: 20.66286

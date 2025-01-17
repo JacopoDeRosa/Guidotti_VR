@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub_EN_09
+  m_Name: Sub_IT_09
   m_EditorClassIdentifier: 
-  _text: "You have blocked an SGLT2 receptor. These receptors will be easier to block
-    compared to SGLT1 receptors, as Invokana has a lower affinity for SGLT1. For
-    SGLT1, you may have to try to block them multiple times.\r\n__________________________________________________________________________________________\r\nPitt
+  _text: "Hai bloccato un recettore SGLT2, che \xE8 pi\xF9 facile da inibire rispetto
+    ai recettori SGLT1, poich\xE9 Invokana ha una minore affinit\xE0 per questi ultimi.
+    Per i recettori SGLT1, potrebbe essere necessario tentare di bloccarli pi\xF9
+    volte. \r\n_____________________________________________________________\r\nPitt
     B, et al. Eur Heart J. 2022 Dec 1;43(45):4754-4757. \r"
   _duration: 30

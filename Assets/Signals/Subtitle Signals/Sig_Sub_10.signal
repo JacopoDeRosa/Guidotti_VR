@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
-  m_Name: Sub_EN_02
+  m_Script: {fileID: 11500000, guid: d6fa2d92fc1b3f34da284357edf89c3b, type: 3}
+  m_Name: Sig_Sub_10
   m_EditorClassIdentifier: 
-  _text: "\rThese are molecules of glucose and sodium. The sodium molecule is on
-    the left, while the molecule on the right is a glucose molecule.\r"
-  _duration: 30

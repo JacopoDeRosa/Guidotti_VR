@@ -12,15 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub_EN_03
   m_EditorClassIdentifier: 
-  _text: 'The glucose and sodium molecules have entered a sodium-glucose cotransporter,
-    also known as SGLT. They have been reabsorbed back into the bloodstream. This
-    has caused an increase in glucose and sodium levels in the blood.
-
-    ______________________________________________________________________________________
-
-    Insalaco
-    M, Zanoli L, Rastelli S, Lentini P, Rapisarda F, Fatuzzo P, Castellino P, Granata
-    A. Gli inibitori del trasportatore Sodio-Glucosio di tipo 2 (SGLT2) nell''insufficienza
-    renale cronica [Sodium Glucose Co-transporter Type 2 (SGLT2) Inhibitors in CKD].
-    G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian.'
+  _text: "The active transport of glucose in the proximal renal tubules is facilitated
+    by specific co-transporters for glucose, namely sodium-glucose co-transporters
+    1 and 2.\r\n\r\nThe glucose and sodium have entered one of these sodium-glucose
+    co-transporters, also known as SGLT, and have been reabsorbed into the bloodstream.
+    In the course of diabetes, it is hypothesized that there is an increase in the
+    tubular reabsorption of glucose and sodium.\r\n__________________________________________________________________________________________\r\nDel
+    Prato, et al. Rassegna vol. 27 \u2013 n. 1 - marzo 2015\r"
   _duration: 30
