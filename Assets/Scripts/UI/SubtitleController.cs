@@ -7,6 +7,8 @@ namespace UI
     public class SubtitleController : MonoBehaviour
     {
         [SerializeField] private TMP_Text _subtitleText;
+        [SerializeField] private TMP_Text _codeText;
+        [SerializeField] private TMP_Text _referencesText;
         [SerializeField] private float _letterSpeed = 0.02f;
         [SerializeField] private bool _printImmediately = true;
         [SerializeField] private SubtitleBundle _subtitleBundle;
@@ -38,6 +40,8 @@ namespace UI
         {
             WaitForSeconds wait = new WaitForSeconds(_letterSpeed);
             _subtitleText.text = "";
+            _codeText.text = subtitle.Code;
+            _referencesText.text = subtitle.References;
             
             if (_printImmediately)
             {
