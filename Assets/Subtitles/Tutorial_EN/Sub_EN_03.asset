@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub_EN_03
   m_EditorClassIdentifier: 
-  _text: "The active transport of glucose in the proximal renal tubules is facilitated
+  _text: 'The active transport of glucose in the proximal renal tubules is facilitated
     by specific co-transporters for glucose, namely sodium-glucose co-transporters
-    1 and 2.\r\n\r\nThe glucose and sodium have entered one of these sodium-glucose
+    1 and 2.
+
+    
+
+    The glucose and sodium have entered one of these sodium-glucose
     co-transporters, also known as SGLT, and have been reabsorbed into the bloodstream.
     In the course of diabetes, it is hypothesized that there is an increase in the
-    tubular reabsorption of glucose and sodium.\r\n__________________________________________________________________________________________\r\nDel
+    tubular reabsorption of glucose and sodium.
+
+'
+  _references: "__________________________________________________________________________________________\r\nDel
     Prato, et al. Rassegna vol. 27 \u2013 n. 1 - marzo 2015\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

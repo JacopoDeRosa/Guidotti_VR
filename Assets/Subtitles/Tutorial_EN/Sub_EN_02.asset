@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "\rThese are molecules of glucose and sodium. The sodium molecule is on
     the left, while the molecule on the right is a glucose molecule.\r"
+  _references: 
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub_EN_01
   m_EditorClassIdentifier: 
-  _text: "\rWelcome. You are currently inside the proximal tubule of a diabetic patient's
-    kidney. It is here that glucose and sodium are reabsorbed into the blood through
-    the sodium-glucose cotransporters that line the wall of this section of the tubule.
-    The molecules that are not reabsorbed from the filtrate are expelled from the
-    body.\r\n___________________________________________________________________________\r\nDel
+  _text: "\rWelcome. \n\nYou are currently inside the proximal tubule of a diabetic
+    patient's kidney. It is here that glucose and sodium are reabsorbed into the
+    blood through the sodium-glucose cotransporters that line the wall of this section
+    of the tubule. The molecules that are not reabsorbed from the filtrate are expelled
+    from the body.\r\n"
+  _references: "___________________________________________________________________________\r\nDel
     Prato, et al. Rassegna vol. 27 \u2013 n. 1 - marzo 2015\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

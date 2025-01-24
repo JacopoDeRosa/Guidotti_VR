@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Sub_IT_05
   m_EditorClassIdentifier: 
   _text: "A livello renale sono presenti recettori SGLT1 e SGLT2. Quello a sinistra
-    \xE8 un recettore SGLT1, mentre quello a destra \xE8 SGLT2.\r\n__________________________________________________________________________________________\r\nLamacchia
+    \xE8 un recettore SGLT1, mentre quello a destra \xE8 SGLT2.\r"
+  _references: "__________________________________________________________________________________________\r\nLamacchia
     O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

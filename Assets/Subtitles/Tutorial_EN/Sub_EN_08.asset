@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0b949a180449df8afe11d7b2408e1b, type: 3}
   m_Name: Sub_EN_08
   m_EditorClassIdentifier: 
-  _text: 'Invokana has prevented the reabsorption of glucose and sodium into the
-    bloodstream by blocking the reabsorption mechanism. This has helped to lower
-    glucose and sodium levels in the blood.
-
-    ______________________________________________________________________________________
+  _text: Invokana has prevented the reabsorption of glucose and sodium into the bloodstream
+    by blocking the reabsorption mechanism. This has helped to lower glucose and
+    sodium levels in the blood.
+  _references: '______________________________________________________________________________________
 
     Invokana.
     RCP'
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

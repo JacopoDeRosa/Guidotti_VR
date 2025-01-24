@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Nei pazienti diabetici, il corpo produce, paradossalmente, pi\xF9 SGLT
     lungo le pareti del tubulo, riassorbendo le molecole di glucosio e sodio invece
-    di espellerle. Nel tempo, questo causer\xE0 danni al rene.\r\n__________________________________________________________________________________________\r\nInsalaco
+    di espellerle. Nel tempo, questo causer\xE0 danni al rene.\r"
+  _references: "__________________________________________________________________________________________\r\nInsalaco
     M, et al. G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian.\r"
+  _code: 
   _duration: 30

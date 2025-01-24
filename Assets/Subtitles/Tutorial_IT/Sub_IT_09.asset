@@ -15,6 +15,9 @@ MonoBehaviour:
   _text: "Hai bloccato un recettore SGLT2, che \xE8 pi\xF9 facile da inibire rispetto
     ai recettori SGLT1, poich\xE9 Invokana ha una minore affinit\xE0 per questi ultimi.
     Per i recettori SGLT1, potrebbe essere necessario tentare di bloccarli pi\xF9
-    volte. \r\n_____________________________________________________________\r\nPitt
+    volte. \r"
+  _references: "_____________________________________________________________\r\nPitt
     B, et al. Eur Heart J. 2022 Dec 1;43(45):4754-4757. \r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

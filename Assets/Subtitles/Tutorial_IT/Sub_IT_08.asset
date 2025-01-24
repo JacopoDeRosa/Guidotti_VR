@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Invokana ha impedito il riassorbimento di glucosio e sodio nel flusso sanguigno
     bloccando il meccanismo di riassorbimento. Questo ha contribuito ad abbassare
-    i livelli di glucosio e sodio nel sangue.\r\n_________________________________________________________________________\r\nInvokana.
+    i livelli di glucosio e sodio nel sangue.\r"
+  _references: "_________________________________________________________________________\r\nInvokana.
     RCP\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

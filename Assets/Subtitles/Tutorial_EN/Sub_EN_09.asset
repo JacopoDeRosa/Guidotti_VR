@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "You have blocked an SGLT2 receptor. These receptors will be easier to block
     compared to SGLT1 receptors, as Invokana has a lower affinity for SGLT1. For
-    SGLT1, you may have to try to block them multiple times.\r\n__________________________________________________________________________________________\r\nPitt
+    SGLT1, you may have to try to block them multiple times.\r"
+  _references: "__________________________________________________________________________________________\r\nPitt
     B, et al. Eur Heart J. 2022 Dec 1;43(45):4754-4757. \r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

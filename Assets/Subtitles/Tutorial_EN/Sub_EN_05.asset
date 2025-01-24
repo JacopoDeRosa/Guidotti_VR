@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Sub_EN_05
   m_EditorClassIdentifier: 
   _text: "At the renal level, SGLT1 and SGLT2 receptors are present. The one on the
-    left is an SGLT1 receptor, while the one on the right is an SGLT2 receptor.\r\n__________________________________________________________________________________________\r\nLamacchia
+    left is an SGLT1 receptor, while the one on the right is an SGLT2 receptor.\r"
+  _references: "__________________________________________________________________________________________\r\nLamacchia
     O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "In diabetic patients, the body, paradoxically, produces more SGLT along
     the walls of the tubule, reabsorbing glucose and sodium molecules instead of
-    expelling them. Over time, this will cause damage to the kidney.\r\n__________________________________________________________________________________________\r\nInsalaco
+    expelling them. Over time, this will cause damage to the kidney.\r"
+  _references: "__________________________________________________________________________________________\r\nInsalaco
     M, et al. G Ital Nefrol. 2015 Jul-Aug;32(4):gin/32.4.2. Italian.\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30

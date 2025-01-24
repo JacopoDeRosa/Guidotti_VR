@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Sub_EN_07
   m_EditorClassIdentifier: 
   _text: "\rThis is Invokana, the trade name for canagliflozin. It is a medication
-    used to treat type 2 diabetes. Try to grab the Invokana molecule with your hand
-    and insert it into the SGLT2.\r\n__________________________________________________________________________________________\r\nInvokana.
+    used to treat type 2 diabetes.\n\nTry to grab the Invokana molecule with your
+    hand and insert it into the SGLT2.\r\n"
+  _references: "__________________________________________________________________________________________\r\nInvokana.
     RCP\r"
+  _code: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
+    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
   _duration: 30
