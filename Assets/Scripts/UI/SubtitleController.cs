@@ -34,6 +34,8 @@ namespace UI
         {
             StopAllCoroutines();
             _subtitleText.text = "";
+            _codeText.text = "";
+            _referencesText.text = "";
         }
         
         private IEnumerator WriteSubtitleRoutine(Subtitle subtitle)

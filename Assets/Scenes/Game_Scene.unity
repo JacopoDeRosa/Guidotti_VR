@@ -5457,8 +5457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Codice deposito aziendale IT-INV-1-2025, Pubblicit\xE0 rivolta ai medici
-    depositata in  AIFA  il XX/xx/xxxx  VIETATA LA DISTRIBUZIONE/ESPOSIZIONE AL PUBBLICO. "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7255,8 +7254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "__________________________________________________________________________________________\r\nLamacchia
-    O. et al.Ruolo del Rene nella Omeostasi Glicemica.  MEDIA 2016;16:182-186\r"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8177,11 +8175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\rWelcome. \n\nYou are currently inside the proximal tubule of a diabetic
-    patient's kidney. It is here that glucose and sodium are reabsorbed into the
-    blood through the sodium-glucose cotransporters that line the wall of this section
-    of the tubule. The molecules that are not reabsorbed from the filtrate are expelled
-    from the body.\r\n"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10288,41 +10282,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 204150792}
     m_Modifications:
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_VideoClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_ControlledAudioTrackCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_DirectAudioMutes.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_DirectAudioVolumes.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_EnabledAudioTracks.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
-        type: 3}
-      propertyPath: m_TargetAudioSources.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6802354282170144712, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10471,7 +10430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameController: {fileID: 1052926590}
-  debugPath: C:/Users/Utente205.EVENTS/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
+  debugPath: C:/Users/Jacopo/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
   _highScoreData:
     scores: []
 --- !u!4 &1403701950
