@@ -62,6 +62,8 @@ namespace UI
             yield return new WaitForSeconds(subtitle.Duration);
             
             _subtitleText.text = "";
+            _codeText.text = "";
+            _referencesText.text = "";
             
             
         }
