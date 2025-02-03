@@ -11,6 +11,7 @@ namespace UI
         [SerializeField] private TMP_Text _referencesText;
         [SerializeField] private float _letterSpeed = 0.02f;
         [SerializeField] private bool _printImmediately = true;
+        [SerializeField] private bool _resetCode = false;
         [SerializeField] private SubtitleBundle _subtitleBundle;
         
         
@@ -34,7 +35,7 @@ namespace UI
         {
             StopAllCoroutines();
             _subtitleText.text = "";
-            _codeText.text = "";
+            if(_resetCode) _codeText.text = "";
             _referencesText.text = "";
         }
         
@@ -62,7 +63,7 @@ namespace UI
             yield return new WaitForSeconds(subtitle.Duration);
             
             _subtitleText.text = "";
-            _codeText.text = "";
+            if(_resetCode) _codeText.text = "";
             _referencesText.text = "";
             
             
