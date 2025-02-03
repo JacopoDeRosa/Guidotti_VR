@@ -10282,6 +10282,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 204150792}
     m_Modifications:
+    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802354282170144710, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802354282170144711, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6802354282170144712, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10387,10 +10407,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6802354282170144713, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6802354282170144715, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
         type: 3}
       propertyPath: m_Name
       value: Intro_Video_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802354282170144715, guid: 2a5ef55a21f820b4ba92330feb86bbc2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5ef55a21f820b4ba92330feb86bbc2, type: 3}
@@ -10430,7 +10460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameController: {fileID: 1052926590}
-  debugPath: C:/Users/Jacopo/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
+  debugPath: C:/Users/Utente205.EVENTS/AppData/LocalLow/EventsGroup/GuidottiExperience/highscores.json
   _highScoreData:
     scores: []
 --- !u!4 &1403701950
